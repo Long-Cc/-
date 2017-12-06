@@ -12,6 +12,7 @@
 #ifdef __OBJC__
 
 #import "UIView+CLExtention.h"
+#import "CLItemManager.h"
 
 /**日志**/
 #ifdef DEBUG

@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0434A9F61FD5691900D63B93 /* CLItemManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 0434A9F51FD5691900D63B93 /* CLItemManager.m */; };
 		0456BF651FD3AE6F001A1C69 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 0456BF5A1FD3AE6F001A1C69 /* AppDelegate.m */; };
 		0456BF661FD3AE6F001A1C69 /* UIView+CLExtention.m in Sources */ = {isa = PBXBuildFile; fileRef = 0456BF5D1FD3AE6F001A1C69 /* UIView+CLExtention.m */; };
 		0456BF671FD3AE6F001A1C69 /* CLTabBar.m in Sources */ = {isa = PBXBuildFile; fileRef = 0456BF621FD3AE6F001A1C69 /* CLTabBar.m */; };
@@ -20,6 +21,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		0434A9F41FD5691900D63B93 /* CLItemManager.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CLItemManager.h; sourceTree = "<group>"; };
+		0434A9F51FD5691900D63B93 /* CLItemManager.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CLItemManager.m; sourceTree = "<group>"; };
 		0456BF511FD3A73E001A1C69 /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
 		0456BF591FD3AE6F001A1C69 /* AppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		0456BF5A1FD3AE6F001A1C69 /* AppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -65,6 +68,22 @@
 				0456BF581FD3AE6F001A1C69 /* Others(其他) */,
 			);
 			path = Classes;
+			sourceTree = "<group>";
+		};
+		0434A9F21FD558C200D63B93 /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		0434A9F31FD5683600D63B93 /* Manager */ = {
+			isa = PBXGroup;
+			children = (
+				0434A9F41FD5691900D63B93 /* CLItemManager.h */,
+				0434A9F51FD5691900D63B93 /* CLItemManager.m */,
+			);
+			path = Manager;
 			sourceTree = "<group>";
 		};
 		0456BF501FD3A73D001A1C69 /* Frameworks */ = {
@@ -118,9 +137,10 @@
 		0456BF581FD3AE6F001A1C69 /* Others(其他) */ = {
 			isa = PBXGroup;
 			children = (
+				0434A9F31FD5683600D63B93 /* Manager */,
+				0434A9F21FD558C200D63B93 /* View */,
 				0456BF591FD3AE6F001A1C69 /* AppDelegate.h */,
 				0456BF5A1FD3AE6F001A1C69 /* AppDelegate.m */,
-				0456BF821FD3D559001A1C69 /* View */,
 				0456BF5B1FD3AE6F001A1C69 /* Category */,
 				0456BF601FD3AE6F001A1C69 /* ViewController */,
 			);
@@ -239,13 +259,6 @@
 			path = View;
 			sourceTree = "<group>";
 		};
-		0456BF821FD3D559001A1C69 /* View */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = View;
-			sourceTree = "<group>";
-		};
 		04CE4A151FCC407A00B3798E = {
 			isa = PBXGroup;
 			children = (
@@ -358,6 +371,7 @@
 				0456BF651FD3AE6F001A1C69 /* AppDelegate.m in Sources */,
 				0456BF661FD3AE6F001A1C69 /* UIView+CLExtention.m in Sources */,
 				0456BF7A1FD3AF7B001A1C69 /* CLFollowViewController.m in Sources */,
+				0434A9F61FD5691900D63B93 /* CLItemManager.m in Sources */,
 				0456BF6C1FD3AEF8001A1C69 /* CLEssenceViewController.m in Sources */,
 				04CE4A311FCC407A00B3798E /* main.m in Sources */,
 				0456BF721FD3AF35001A1C69 /* CLNewPostsViewController.m in Sources */,

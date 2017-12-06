@@ -17,7 +17,12 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     [self.view setBackgroundColor:CLGrayColor(206)];
+    self.navigationItem.titleView = [[UIImageView alloc] initWithImage:[UIImage imageNamed:@"MainTitle"]];
+    self.navigationItem.leftBarButtonItem = [CLItemManager itemWithImage:@"MainTagSubIcon" hightImage:@"MainTagSubIconClick" target:self action:@selector(tagClick)];;
 }
 
+- (void) tagClick {
+    CLLogFunc
+}
 
 @end
