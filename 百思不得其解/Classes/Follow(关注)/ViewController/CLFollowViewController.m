@@ -16,8 +16,10 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
+    CLLogFunc
+    
     [self.view setBackgroundColor:CLGrayColor(206)];
-    [self.navigationItem setTitle:@"关注"];
+    [self.navigationItem setTitle:@"我的关注"];
     self.navigationItem.leftBarButtonItem = [CLItemManager itemWithImage:@"friendsRecommentIcon" hightImage:@"friendsRecommentIcon-click" target:self action:@selector(tagClick)];;
 }
 

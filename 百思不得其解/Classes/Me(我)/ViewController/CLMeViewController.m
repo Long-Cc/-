@@ -7,6 +7,7 @@
 //
 
 #import "CLMeViewController.h"
+#import "CLSettingController.h"
 
 @interface CLMeViewController ()
 
@@ -16,6 +17,8 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
+    CLLogFunc
+    
     [self.view setBackgroundColor:CLGrayColor(206)];
     [self.navigationItem setTitle:@"我的"];
     UIBarButtonItem *setItemBtn = [CLItemManager itemWithImage:@"mine-setting-icon" hightImage:@"mine-setting-icon-click" target:self action:@selector(setterClick)];
@@ -24,7 +27,8 @@
 }
 
 - (void) setterClick {
-    CLLogFunc
+    CLSettingController *settingController = [[CLSettingController alloc] init];
+    [self.navigationController pushViewController:settingController animated:YES];
 }
 - (void) moonClick {
     CLLogFunc
