@@ -7,6 +7,7 @@
 //
 
 #import "CLFollowViewController.h"
+#import "CLLoginRegisterViewController.h"
 
 @interface CLFollowViewController ()
 
@@ -25,6 +26,11 @@
 
 - (void) tagClick {
     CLLogFunc
+}
+
+- (IBAction)showLoginRegister {
+    CLLoginRegisterViewController *loginRegisterVC = [[CLLoginRegisterViewController alloc] init];
+    [self presentViewController:loginRegisterVC animated:YES completion:nil];
 }
 
 @end

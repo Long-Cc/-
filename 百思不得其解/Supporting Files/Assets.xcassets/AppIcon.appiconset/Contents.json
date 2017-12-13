@@ -184,6 +184,20 @@
     {
       "size" : "29x29",
       "idiom" : "ipad",
+      "language-direction" : "right-to-left",
+      "display-gamut" : "sRGB",
+      "scale" : "1x"
+    },
+    {
+      "size" : "29x29",
+      "idiom" : "ipad",
+      "display-gamut" : "display-P3",
+      "scale" : "1x"
+    },
+    {
+      "size" : "29x29",
+      "idiom" : "ipad",
+      "language-direction" : "right-to-left",
       "display-gamut" : "display-P3",
       "scale" : "1x"
     },
@@ -195,6 +209,19 @@
     {
       "size" : "29x29",
       "idiom" : "ipad",
+      "language-direction" : "right-to-left",
+      "scale" : "2x"
+    },
+    {
+      "size" : "29x29",
+      "idiom" : "ipad",
+      "display-gamut" : "sRGB",
+      "scale" : "2x"
+    },
+    {
+      "size" : "29x29",
+      "idiom" : "ipad",
+      "language-direction" : "right-to-left",
       "display-gamut" : "sRGB",
       "scale" : "2x"
     },
@@ -205,8 +232,21 @@
       "scale" : "2x"
     },
     {
+      "size" : "29x29",
+      "idiom" : "ipad",
+      "language-direction" : "right-to-left",
+      "display-gamut" : "display-P3",
+      "scale" : "2x"
+    },
+    {
       "idiom" : "ipad",
       "size" : "40x40",
+      "scale" : "1x"
+    },
+    {
+      "size" : "40x40",
+      "idiom" : "ipad",
+      "language-direction" : "left-to-right",
       "scale" : "1x"
     },
     {
@@ -218,7 +258,6 @@
     {
       "size" : "40x40",
       "idiom" : "ipad",
-      "filename" : "AppIcon40x40~ipad.png",
       "language-direction" : "left-to-right",
       "display-gamut" : "sRGB",
       "scale" : "1x"
@@ -250,13 +289,26 @@
     {
       "size" : "40x40",
       "idiom" : "ipad",
+      "language-direction" : "left-to-right",
+      "display-gamut" : "sRGB",
+      "scale" : "2x"
+    },
+    {
+      "size" : "40x40",
+      "idiom" : "ipad",
       "display-gamut" : "display-P3",
       "scale" : "2x"
     },
     {
-      "size" : "50x50",
+      "size" : "40x40",
       "idiom" : "ipad",
-      "filename" : "AppIcon50x50~ipad.png",
+      "language-direction" : "left-to-right",
+      "display-gamut" : "display-P3",
+      "scale" : "2x"
+    },
+    {
+      "idiom" : "ipad",
+      "size" : "50x50",
       "scale" : "1x"
     },
     {
@@ -268,6 +320,20 @@
     {
       "size" : "50x50",
       "idiom" : "ipad",
+      "language-direction" : "left-to-right",
+      "display-gamut" : "sRGB",
+      "scale" : "1x"
+    },
+    {
+      "size" : "50x50",
+      "idiom" : "ipad",
+      "display-gamut" : "display-P3",
+      "scale" : "1x"
+    },
+    {
+      "size" : "50x50",
+      "idiom" : "ipad",
+      "language-direction" : "left-to-right",
       "display-gamut" : "display-P3",
       "scale" : "1x"
     },
@@ -285,7 +351,6 @@
     {
       "size" : "50x50",
       "idiom" : "ipad",
-      "filename" : "AppIcon50x50@2x~ipad.png",
       "language-direction" : "left-to-right",
       "display-gamut" : "sRGB",
       "scale" : "2x"
@@ -300,20 +365,53 @@
       "size" : "50x50",
       "idiom" : "ipad",
       "language-direction" : "left-to-right",
+      "display-gamut" : "display-P3",
+      "scale" : "2x"
+    },
+    {
+      "idiom" : "ipad",
+      "size" : "72x72",
+      "scale" : "1x"
+    },
+    {
+      "size" : "72x72",
+      "idiom" : "ipad",
+      "display-gamut" : "sRGB",
+      "scale" : "1x"
+    },
+    {
+      "size" : "72x72",
+      "idiom" : "ipad",
+      "display-gamut" : "display-P3",
+      "scale" : "1x"
+    },
+    {
+      "idiom" : "ipad",
+      "size" : "72x72",
+      "scale" : "2x"
+    },
+    {
+      "size" : "72x72",
+      "idiom" : "ipad",
+      "display-gamut" : "sRGB",
+      "scale" : "2x"
+    },
+    {
+      "size" : "72x72",
+      "idiom" : "ipad",
+      "language-direction" : "left-to-right",
+      "display-gamut" : "sRGB",
+      "scale" : "2x"
+    },
+    {
+      "size" : "72x72",
+      "idiom" : "ipad",
       "display-gamut" : "display-P3",
       "scale" : "2x"
     },
     {
       "size" : "72x72",
       "idiom" : "ipad",
-      "filename" : "AppIcon72x72@2x~ipad.png",
-      "language-direction" : "left-to-right",
-      "display-gamut" : "sRGB",
-      "scale" : "2x"
-    },
-    {
-      "size" : "72x72",
-      "idiom" : "ipad",
       "language-direction" : "left-to-right",
       "display-gamut" : "display-P3",
       "scale" : "2x"
@@ -326,14 +424,26 @@
     {
       "size" : "76x76",
       "idiom" : "ipad",
+      "language-direction" : "right-to-left",
+      "scale" : "1x"
+    },
+    {
+      "size" : "76x76",
+      "idiom" : "ipad",
       "display-gamut" : "sRGB",
       "scale" : "1x"
     },
     {
       "size" : "76x76",
       "idiom" : "ipad",
-      "filename" : "AppIcon76x76~ipad.png",
       "language-direction" : "left-to-right",
+      "display-gamut" : "sRGB",
+      "scale" : "1x"
+    },
+    {
+      "size" : "76x76",
+      "idiom" : "ipad",
+      "language-direction" : "right-to-left",
       "display-gamut" : "sRGB",
       "scale" : "1x"
     },
@@ -351,6 +461,13 @@
       "scale" : "1x"
     },
     {
+      "size" : "76x76",
+      "idiom" : "ipad",
+      "language-direction" : "right-to-left",
+      "display-gamut" : "display-P3",
+      "scale" : "1x"
+    },
+    {
       "idiom" : "ipad",
       "size" : "76x76",
       "scale" : "2x"
@@ -358,13 +475,26 @@
     {
       "size" : "76x76",
       "idiom" : "ipad",
-      "filename" : "AppIcon76x76@2x~ipad.png",
       "display-gamut" : "sRGB",
       "scale" : "2x"
     },
     {
       "size" : "76x76",
       "idiom" : "ipad",
+      "language-direction" : "left-to-right",
+      "display-gamut" : "sRGB",
+      "scale" : "2x"
+    },
+    {
+      "size" : "76x76",
+      "idiom" : "ipad",
+      "display-gamut" : "display-P3",
+      "scale" : "2x"
+    },
+    {
+      "size" : "76x76",
+      "idiom" : "ipad",
+      "language-direction" : "left-to-right",
       "display-gamut" : "display-P3",
       "scale" : "2x"
     },

@@ -16,6 +16,11 @@
 		0456BF721FD3AF35001A1C69 /* CLNewPostsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0456BF711FD3AF35001A1C69 /* CLNewPostsViewController.m */; };
 		0456BF7A1FD3AF7B001A1C69 /* CLFollowViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0456BF791FD3AF7B001A1C69 /* CLFollowViewController.m */; };
 		0456BF801FD3AFB5001A1C69 /* CLMeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0456BF7F1FD3AFB5001A1C69 /* CLMeViewController.m */; };
+		048998851FE160F100FA0A30 /* CLLoginRegisterTextField.m in Sources */ = {isa = PBXBuildFile; fileRef = 048998841FE160F100FA0A30 /* CLLoginRegisterTextField.m */; };
+		04ABA3BD1FDEBDBF00CA9D9B /* CLLoginRegisterViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 04ABA3BB1FDEBDBF00CA9D9B /* CLLoginRegisterViewController.m */; };
+		04ABA3BE1FDEBDBF00CA9D9B /* CLLoginRegisterViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 04ABA3BC1FDEBDBF00CA9D9B /* CLLoginRegisterViewController.xib */; };
+		04ABA3C01FDEC39100CA9D9B /* CLFollowViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 04ABA3BF1FDEC39100CA9D9B /* CLFollowViewController.xib */; };
+		04ABA3C31FDED5A300CA9D9B /* CLButton.m in Sources */ = {isa = PBXBuildFile; fileRef = 04ABA3C21FDED5A300CA9D9B /* CLButton.m */; };
 		04CE4A2B1FCC407A00B3798E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 04CE4A2A1FCC407A00B3798E /* Assets.xcassets */; };
 		04CE4A311FCC407A00B3798E /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 04CE4A301FCC407A00B3798E /* main.m */; };
 		04DAF25E1FD834A5001A8BD9 /* CLNavigationController.m in Sources */ = {isa = PBXBuildFile; fileRef = 04DAF25D1FD834A5001A8BD9 /* CLNavigationController.m */; };
@@ -43,6 +48,14 @@
 		0456BF791FD3AF7B001A1C69 /* CLFollowViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CLFollowViewController.m; sourceTree = "<group>"; };
 		0456BF7E1FD3AFB5001A1C69 /* CLMeViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CLMeViewController.h; sourceTree = "<group>"; };
 		0456BF7F1FD3AFB5001A1C69 /* CLMeViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CLMeViewController.m; sourceTree = "<group>"; };
+		048998831FE160F100FA0A30 /* CLLoginRegisterTextField.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CLLoginRegisterTextField.h; sourceTree = "<group>"; };
+		048998841FE160F100FA0A30 /* CLLoginRegisterTextField.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CLLoginRegisterTextField.m; sourceTree = "<group>"; };
+		04ABA3BA1FDEBDBF00CA9D9B /* CLLoginRegisterViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CLLoginRegisterViewController.h; sourceTree = "<group>"; };
+		04ABA3BB1FDEBDBF00CA9D9B /* CLLoginRegisterViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CLLoginRegisterViewController.m; sourceTree = "<group>"; };
+		04ABA3BC1FDEBDBF00CA9D9B /* CLLoginRegisterViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CLLoginRegisterViewController.xib; sourceTree = "<group>"; };
+		04ABA3BF1FDEC39100CA9D9B /* CLFollowViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CLFollowViewController.xib; sourceTree = "<group>"; };
+		04ABA3C11FDED5A300CA9D9B /* CLButton.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CLButton.h; sourceTree = "<group>"; };
+		04ABA3C21FDED5A300CA9D9B /* CLButton.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CLButton.m; sourceTree = "<group>"; };
 		04CE4A1E1FCC407A00B3798E /* 百思不得其解.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "百思不得其解.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		04CE4A2A1FCC407A00B3798E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		04CE4A2F1FCC407A00B3798E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -79,6 +92,10 @@
 		0434A9F21FD558C200D63B93 /* View */ = {
 			isa = PBXGroup;
 			children = (
+				04ABA3C11FDED5A300CA9D9B /* CLButton.h */,
+				04ABA3C21FDED5A300CA9D9B /* CLButton.m */,
+				048998831FE160F100FA0A30 /* CLLoginRegisterTextField.h */,
+				048998841FE160F100FA0A30 /* CLLoginRegisterTextField.m */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -171,6 +188,9 @@
 				0456BF641FD3AE6F001A1C69 /* TabBarViewController.m */,
 				04DAF25C1FD834A5001A8BD9 /* CLNavigationController.h */,
 				04DAF25D1FD834A5001A8BD9 /* CLNavigationController.m */,
+				04ABA3BA1FDEBDBF00CA9D9B /* CLLoginRegisterViewController.h */,
+				04ABA3BB1FDEBDBF00CA9D9B /* CLLoginRegisterViewController.m */,
+				04ABA3BC1FDEBDBF00CA9D9B /* CLLoginRegisterViewController.xib */,
 			);
 			path = ViewController;
 			sourceTree = "<group>";
@@ -240,6 +260,7 @@
 			children = (
 				0456BF781FD3AF7B001A1C69 /* CLFollowViewController.h */,
 				0456BF791FD3AF7B001A1C69 /* CLFollowViewController.m */,
+				04ABA3BF1FDEC39100CA9D9B /* CLFollowViewController.xib */,
 			);
 			path = ViewController;
 			sourceTree = "<group>";
@@ -366,6 +387,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				04CE4A2B1FCC407A00B3798E /* Assets.xcassets in Resources */,
+				04ABA3BE1FDEBDBF00CA9D9B /* CLLoginRegisterViewController.xib in Resources */,
+				04ABA3C01FDEC39100CA9D9B /* CLFollowViewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -377,11 +400,14 @@
 			buildActionMask = 2147483647;
 			files = (
 				0456BF681FD3AE6F001A1C69 /* TabBarViewController.m in Sources */,
+				048998851FE160F100FA0A30 /* CLLoginRegisterTextField.m in Sources */,
 				04DAF2611FD83A28001A8BD9 /* CLSettingController.m in Sources */,
 				0456BF671FD3AE6F001A1C69 /* CLTabBar.m in Sources */,
 				0456BF651FD3AE6F001A1C69 /* AppDelegate.m in Sources */,
+				04ABA3C31FDED5A300CA9D9B /* CLButton.m in Sources */,
 				0456BF661FD3AE6F001A1C69 /* UIView+CLExtention.m in Sources */,
 				0456BF7A1FD3AF7B001A1C69 /* CLFollowViewController.m in Sources */,
+				04ABA3BD1FDEBDBF00CA9D9B /* CLLoginRegisterViewController.m in Sources */,
 				0434A9F61FD5691900D63B93 /* CLItemManager.m in Sources */,
 				04DAF25E1FD834A5001A8BD9 /* CLNavigationController.m in Sources */,
 				0456BF6C1FD3AEF8001A1C69 /* CLEssenceViewController.m in Sources */,

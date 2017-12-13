@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13772"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="CLFollowViewController">
+            <connections>
+                <outlet property="view" destination="iN0-l3-epB" id="CbB-zO-ncP"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="iN0-l3-epB">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Ws6-Qz-B20">
+                    <rect key="frame" x="123" y="303" width="128.5" height="61"/>
+                    <string key="text">dfewrwerwehfgd
+dfsdfdgsdf
+rrtertert</string>
+                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="header_cry_icon" translatesAutoresizingMaskIntoConstraints="NO" id="cY4-9H-LNV">
+                    <rect key="frame" x="163.5" y="215" width="48" height="48"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="48" id="cis-IW-pYI"/>
+                        <constraint firstAttribute="width" constant="48" id="gGS-Z1-7XW"/>
+                    </constraints>
+                </imageView>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="uaG-JI-Lnv">
+                    <rect key="frame" x="65.5" y="404" width="243" height="48"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                    <state key="normal" title="快速登入及注册" backgroundImage="friendsTrend_login">
+                        <color key="titleColor" red="1" green="0.14913141730000001" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    </state>
+                    <state key="highlighted" title="快速登入及注册" backgroundImage="friendsTrend_login_click">
+                        <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    </state>
+                    <connections>
+                        <action selector="showLoginRegister" destination="-1" eventType="touchUpInside" id="NqO-2w-fx1"/>
+                    </connections>
+                </button>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="Ws6-Qz-B20" firstAttribute="top" secondItem="cY4-9H-LNV" secondAttribute="bottom" constant="40" id="9jz-Cg-gX3"/>
+                <constraint firstItem="cY4-9H-LNV" firstAttribute="centerX" secondItem="iN0-l3-epB" secondAttribute="centerX" id="VKA-8B-r9I"/>
+                <constraint firstItem="uaG-JI-Lnv" firstAttribute="centerX" secondItem="iN0-l3-epB" secondAttribute="centerX" id="Xws-W9-CeR"/>
+                <constraint firstItem="uaG-JI-Lnv" firstAttribute="top" secondItem="Ws6-Qz-B20" secondAttribute="bottom" constant="40" id="eoc-jZ-zFd"/>
+                <constraint firstItem="Ws6-Qz-B20" firstAttribute="centerX" secondItem="iN0-l3-epB" secondAttribute="centerX" id="pRw-tC-RIF"/>
+                <constraint firstItem="Ws6-Qz-B20" firstAttribute="centerY" secondItem="iN0-l3-epB" secondAttribute="centerY" id="rae-wZ-UlR"/>
+            </constraints>
+        </view>
+    </objects>
+    <resources>
+        <image name="friendsTrend_login" width="243" height="48"/>
+        <image name="friendsTrend_login_click" width="243" height="48"/>
+        <image name="header_cry_icon" width="48" height="48"/>
+    </resources>
+</document>

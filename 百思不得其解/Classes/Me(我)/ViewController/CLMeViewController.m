@@ -8,6 +8,7 @@
 
 #import "CLMeViewController.h"
 #import "CLSettingController.h"
+#import "CLLoginRegisterViewController.h"
 
 @interface CLMeViewController ()
 
