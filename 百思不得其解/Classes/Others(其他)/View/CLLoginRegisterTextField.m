@@ -12,7 +12,10 @@
 
 - (void) awakeFromNib {
     [super awakeFromNib];
+    NSMutableDictionary *attribute = [NSMutableDictionary dictionary];
     self.tintColor =[UIColor whiteColor];
+    NSAttributedString *string = [[NSAttributedString alloc] initWithString:@"" attributes: attribute];
+    self.attributedPlaceholder = string;
 }
 
 @end
