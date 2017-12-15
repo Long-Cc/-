@@ -25,6 +25,7 @@
 		04CE4A311FCC407A00B3798E /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 04CE4A301FCC407A00B3798E /* main.m */; };
 		04DAF25E1FD834A5001A8BD9 /* CLNavigationController.m in Sources */ = {isa = PBXBuildFile; fileRef = 04DAF25D1FD834A5001A8BD9 /* CLNavigationController.m */; };
 		04DAF2611FD83A28001A8BD9 /* CLSettingController.m in Sources */ = {isa = PBXBuildFile; fileRef = 04DAF2601FD83A28001A8BD9 /* CLSettingController.m */; };
+		04E9825D1FE41A220034C8EF /* UITextField+CLExtension.m in Sources */ = {isa = PBXBuildFile; fileRef = 04E9825C1FE41A220034C8EF /* UITextField+CLExtension.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -64,6 +65,8 @@
 		04DAF25D1FD834A5001A8BD9 /* CLNavigationController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CLNavigationController.m; sourceTree = "<group>"; };
 		04DAF25F1FD83A28001A8BD9 /* CLSettingController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CLSettingController.h; sourceTree = "<group>"; };
 		04DAF2601FD83A28001A8BD9 /* CLSettingController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CLSettingController.m; sourceTree = "<group>"; };
+		04E9825B1FE41A220034C8EF /* UITextField+CLExtension.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UITextField+CLExtension.h"; sourceTree = "<group>"; };
+		04E9825C1FE41A220034C8EF /* UITextField+CLExtension.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UITextField+CLExtension.m"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -175,6 +178,8 @@
 			children = (
 				0456BF5C1FD3AE6F001A1C69 /* UIView+CLExtention.h */,
 				0456BF5D1FD3AE6F001A1C69 /* UIView+CLExtention.m */,
+				04E9825B1FE41A220034C8EF /* UITextField+CLExtension.h */,
+				04E9825C1FE41A220034C8EF /* UITextField+CLExtension.m */,
 			);
 			path = Category;
 			sourceTree = "<group>";
@@ -401,6 +406,7 @@
 			files = (
 				0456BF681FD3AE6F001A1C69 /* TabBarViewController.m in Sources */,
 				048998851FE160F100FA0A30 /* CLLoginRegisterTextField.m in Sources */,
+				04E9825D1FE41A220034C8EF /* UITextField+CLExtension.m in Sources */,
 				04DAF2611FD83A28001A8BD9 /* CLSettingController.m in Sources */,
 				0456BF671FD3AE6F001A1C69 /* CLTabBar.m in Sources */,
 				0456BF651FD3AE6F001A1C69 /* AppDelegate.m in Sources */,

@@ -8,14 +8,44 @@
 
 #import "CLLoginRegisterTextField.h"
 
+
+static NSString *const placeholderColorKey = @"placeholderLabel.textColor";
+
 @implementation CLLoginRegisterTextField
 
 - (void) awakeFromNib {
     [super awakeFromNib];
-    NSMutableDictionary *attribute = [NSMutableDictionary dictionary];
+    //设置光标颜色
     self.tintColor =[UIColor whiteColor];
-    NSAttributedString *string = [[NSAttributedString alloc] initWithString:@"" attributes: attribute];
-    self.attributedPlaceholder = string;
+    
+//    #import <objc/runtime.h>
+//    unsigned int count;
+//    Ivar *ivarList = class_copyIvarList([UITextField class], &count);
+//    for (int i = 0; i < count; ++i) {
+//        Ivar ivar = ivarList[i];
+//        NSLog(@"%s",ivar_getName(ivar));
+//    }
+    
+}
+
+/**
+ *  调用时刻 : 成为第一响应者(开始编辑\弹出键盘\获得焦点)
+ */
+- (BOOL)becomeFirstResponder
+{
+    self.placeholderColor = [UIColor whiteColor];
+    //[self setValue:[UIColor whiteColor] forKeyPath:placeholderColorKey];
+    return [super becomeFirstResponder];
+}
+
+/**
+ *  调用时刻 : 不做第一响应者(结束编辑\退出键盘\失去焦点)
+ */
+- (BOOL)resignFirstResponder
+{
+    self.placeholderColor = [UIColor grayColor];
+    //[self setValue:[UIColor grayColor] forKeyPath:placeholderColorKey];
+    return [super resignFirstResponder];
 }
 
 @end
