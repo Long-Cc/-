@@ -12,10 +12,12 @@ static NSString *const placeholderColorKey = @"placeholderLabel.textColor";
 @implementation UITextField (CLExtension)
 
 - (void) setPlaceholderColor:(UIColor *)placeholderColor {
+    //提前设置占位文字, 目的 : 让它提前创建placeholderLabel
     NSString *oldPlaceholder = self.placeholder;
     self.placeholder = @" ";
     self.placeholder = oldPlaceholder;
     if (placeholderColor == nil) {
+        //默认占位文字颜色
         placeholderColor = [UIColor colorWithRed:0 green:0 blue:0.0980392 alpha:0.22];
     }
     [self setValue:placeholderColor forKeyPath:placeholderColorKey];

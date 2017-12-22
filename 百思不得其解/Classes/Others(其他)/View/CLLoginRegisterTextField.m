@@ -17,7 +17,7 @@ static NSString *const placeholderColorKey = @"placeholderLabel.textColor";
     [super awakeFromNib];
     //设置光标颜色
     self.tintColor =[UIColor whiteColor];
-    
+//    得到key@“placeholderLabel.textColor”
 //    #import <objc/runtime.h>
 //    unsigned int count;
 //    Ivar *ivarList = class_copyIvarList([UITextField class], &count);
@@ -31,8 +31,7 @@ static NSString *const placeholderColorKey = @"placeholderLabel.textColor";
 /**
  *  调用时刻 : 成为第一响应者(开始编辑\弹出键盘\获得焦点)
  */
-- (BOOL)becomeFirstResponder
-{
+- (BOOL) becomeFirstResponder {
     self.placeholderColor = [UIColor whiteColor];
     //[self setValue:[UIColor whiteColor] forKeyPath:placeholderColorKey];
     return [super becomeFirstResponder];
@@ -41,8 +40,7 @@ static NSString *const placeholderColorKey = @"placeholderLabel.textColor";
 /**
  *  调用时刻 : 不做第一响应者(结束编辑\退出键盘\失去焦点)
  */
-- (BOOL)resignFirstResponder
-{
+- (BOOL) resignFirstResponder {
     self.placeholderColor = [UIColor grayColor];
     //[self setValue:[UIColor grayColor] forKeyPath:placeholderColorKey];
     return [super resignFirstResponder];

@@ -15,6 +15,7 @@
 #import "CLItemManager.h"
 #import "CLNavigationController.h"
 #import "UITextField+CLExtension.h"
+#import "Constants.h"
 
 /**日志**/
 #ifdef DEBUG

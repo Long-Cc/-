@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13772"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="CLWebViewController">
+            <connections>
+                <outlet property="backItem" destination="019-2D-bOS" id="4Jm-DO-r4b"/>
+                <outlet property="forwardItem" destination="l2j-dL-XA7" id="vE8-5Y-c16"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+                <outlet property="webView" destination="72d-rz-Xpc" id="ccN-CY-ACP"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="i5M-Pr-FkT" customClass="CLW">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <webView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="72d-rz-Xpc">
+                    <rect key="frame" x="0.0" y="0.0" width="375" height="623"/>
+                    <color key="backgroundColor" red="0.36078431370000003" green="0.38823529410000002" blue="0.4039215686" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <connections>
+                        <outlet property="delegate" destination="-1" id="NGM-6c-9s4"/>
+                    </connections>
+                </webView>
+                <toolbar opaque="NO" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Rhl-fi-EF3">
+                    <rect key="frame" x="0.0" y="623" width="375" height="44"/>
+                    <items>
+                        <barButtonItem enabled="NO" title="Item" image="left_Forward" id="019-2D-bOS">
+                            <connections>
+                                <action selector="goBack:" destination="-1" id="TLN-5w-cbc"/>
+                            </connections>
+                        </barButtonItem>
+                        <barButtonItem enabled="NO" title="Item" image="right_Back" id="l2j-dL-XA7">
+                            <connections>
+                                <action selector="goForward:" destination="-1" id="lBa-Gm-gWX"/>
+                            </connections>
+                        </barButtonItem>
+                        <barButtonItem style="plain" systemItem="flexibleSpace" id="Fx9-R6-23K"/>
+                        <barButtonItem systemItem="refresh" id="x9C-KL-qwY">
+                            <connections>
+                                <action selector="reFlash:" destination="-1" id="UXb-0L-IMq"/>
+                            </connections>
+                        </barButtonItem>
+                    </items>
+                </toolbar>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstAttribute="trailing" secondItem="72d-rz-Xpc" secondAttribute="trailing" id="WST-MI-gbn"/>
+                <constraint firstItem="72d-rz-Xpc" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="iKa-FZ-t59"/>
+                <constraint firstItem="Rhl-fi-EF3" firstAttribute="top" secondItem="72d-rz-Xpc" secondAttribute="bottom" id="jbk-cO-Yq1"/>
+                <constraint firstItem="72d-rz-Xpc" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="meF-Zb-ig8"/>
+                <constraint firstItem="Rhl-fi-EF3" firstAttribute="bottom" secondItem="i5M-Pr-FkT" secondAttribute="bottom" id="nEd-Kg-yLq"/>
+                <constraint firstItem="Rhl-fi-EF3" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="qvk-C0-bQB"/>
+                <constraint firstItem="Rhl-fi-EF3" firstAttribute="trailing" secondItem="i5M-Pr-FkT" secondAttribute="trailing" id="uBq-Mm-699"/>
+            </constraints>
+            <point key="canvasLocation" x="24.5" y="51.5"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="left_Forward" width="32" height="24"/>
+        <image name="right_Back" width="32" height="24"/>
+    </resources>
+</document>
