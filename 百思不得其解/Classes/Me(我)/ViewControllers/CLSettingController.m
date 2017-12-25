@@ -7,13 +7,15 @@
 //
 
 #import "CLSettingController.h"
+#import "CLClearCacheTableViewCell.h"
 
 @interface CLSettingController () <UITableViewDelegate,UITableViewDataSource>
 
 @end
 
-@implementation CLSettingController
+static NSString *ID = @"CellIdentifier";
 
+@implementation CLSettingController
 - (instancetype) init {
    return [self initWithStyle:UITableViewStyleGrouped];
 }
@@ -22,7 +24,10 @@
     [super viewDidLoad];
     self.navigationItem.title = @"设置";
     self.tableView.delegate = self;
+    [self.tableView registerClass:[CLClearCacheTableViewCell class] forCellReuseIdentifier:ID];
     [self geCacheSize];
+    
+    
 }
 
 
@@ -34,12 +39,8 @@
     return 1;
 }
 - (UITableViewCell *) tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
-    static NSString *ID = @"CellIdentifier";
+   
     UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:ID];
-    if (!cell) {
-        cell = [[UITableViewCell alloc] initWithStyle:UITableViewCellStyleDefault reuseIdentifier:ID];
-    }
-    cell.textLabel.text = @"清除缓存()";
     return cell;
 }
 
