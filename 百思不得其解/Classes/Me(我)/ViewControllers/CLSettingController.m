@@ -25,7 +25,7 @@ static NSString *ID = @"CellIdentifier";
     self.navigationItem.title = @"设置";
     self.tableView.delegate = self;
     [self.tableView registerClass:[CLClearCacheTableViewCell class] forCellReuseIdentifier:ID];
-    [self geCacheSize];
+   // [self geCacheSize];
     
     
 }
@@ -39,16 +39,16 @@ static NSString *ID = @"CellIdentifier";
     return 1;
 }
 - (UITableViewCell *) tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
-   
-    UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:ID];
-    return cell;
+    return [tableView dequeueReusableCellWithIdentifier:ID];
 }
+
 
 
 - (void) geCacheSize {
     unsigned long long size = 0;
     NSString *cachePath = NSSearchPathForDirectoriesInDomains(NSCachesDirectory, NSUserDomainMask, YES).lastObject;
     NSString *dirPath = [cachePath stringByAppendingPathComponent:@"default"];
+    NSLog(@"%@",dirPath);
     NSFileManager *manager = [NSFileManager defaultManager];
     NSArray *subPaths = [manager subpathsAtPath:dirPath];
     for (NSString *subPath in subPaths) {
