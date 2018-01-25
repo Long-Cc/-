@@ -84,8 +84,6 @@
 //        [nav pushViewController:webViewCOntroller animated:YES];
         SFSafariViewController *safari = [[SFSafariViewController alloc] initWithURL:[NSURL URLWithString:url]];
         [tabBarVc presentViewController:safari animated:YES completion:nil];
-        
-        
     } else if ([url hasPrefix:@"mod:"]) {
         NSLog(@"跳转到自己的定义的页面");
     } else {

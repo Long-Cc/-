@@ -89,6 +89,7 @@
 		04CA783A1FE809A1002456A9 /* NSString+MJExtension.m in Sources */ = {isa = PBXBuildFile; fileRef = 04CA782F1FE809A1002456A9 /* NSString+MJExtension.m */; };
 		04CE4A2B1FCC407A00B3798E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 04CE4A2A1FCC407A00B3798E /* Assets.xcassets */; };
 		04CE4A311FCC407A00B3798E /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 04CE4A301FCC407A00B3798E /* main.m */; };
+		04D0B84A1FF680F80084EDFE /* CLTitleButton.m in Sources */ = {isa = PBXBuildFile; fileRef = 04D0B8491FF680F80084EDFE /* CLTitleButton.m */; };
 		04DAF25E1FD834A5001A8BD9 /* CLNavigationController.m in Sources */ = {isa = PBXBuildFile; fileRef = 04DAF25D1FD834A5001A8BD9 /* CLNavigationController.m */; };
 		04DAF2611FD83A28001A8BD9 /* CLSettingController.m in Sources */ = {isa = PBXBuildFile; fileRef = 04DAF2601FD83A28001A8BD9 /* CLSettingController.m */; };
 		04E9825D1FE41A220034C8EF /* UITextField+CLExtension.m in Sources */ = {isa = PBXBuildFile; fileRef = 04E9825C1FE41A220034C8EF /* UITextField+CLExtension.m */; };
@@ -262,6 +263,8 @@
 		04CE4A2A1FCC407A00B3798E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		04CE4A2F1FCC407A00B3798E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		04CE4A301FCC407A00B3798E /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		04D0B8481FF680F80084EDFE /* CLTitleButton.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CLTitleButton.h; sourceTree = "<group>"; };
+		04D0B8491FF680F80084EDFE /* CLTitleButton.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CLTitleButton.m; sourceTree = "<group>"; };
 		04DAF25C1FD834A5001A8BD9 /* CLNavigationController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CLNavigationController.h; sourceTree = "<group>"; };
 		04DAF25D1FD834A5001A8BD9 /* CLNavigationController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CLNavigationController.m; sourceTree = "<group>"; };
 		04DAF25F1FD83A28001A8BD9 /* CLSettingController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CLSettingController.h; sourceTree = "<group>"; };
@@ -544,6 +547,8 @@
 		0456BF6E1FD3AF11001A1C69 /* View */ = {
 			isa = PBXGroup;
 			children = (
+				04D0B8481FF680F80084EDFE /* CLTitleButton.h */,
+				04D0B8491FF680F80084EDFE /* CLTitleButton.m */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -847,6 +852,7 @@
 				044CE5641FE7EC1B00AAC8CF /* UIImage+ForceDecode.m in Sources */,
 				044CE56B1FE7EC1B00AAC8CF /* UIView+WebCacheOperation.m in Sources */,
 				0456BF7A1FD3AF7B001A1C69 /* CLFollowViewController.m in Sources */,
+				04D0B84A1FF680F80084EDFE /* CLTitleButton.m in Sources */,
 				048173141FF12E7D00E89B54 /* CLClearCacheTableViewCell.m in Sources */,
 				04ABA3BD1FDEBDBF00CA9D9B /* CLLoginRegisterViewController.m in Sources */,
 				044CE57F1FE7ECB500AAC8CF /* AFURLSessionManager.m in Sources */,

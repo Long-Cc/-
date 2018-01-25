@@ -10,7 +10,7 @@
 #import "SDImageCache.h"
 #import "NSString+CLExtension.h"
 #import "SVProgressHUD.h"
-#define CustomCacheFile [NSSearchPathForDirectoriesInDomains(NSCachesDirectory, NSUserDomainMask, YES).lastObject stringByAppendingPathComponent:@"custom"]
+#define CustomCacheFile [NSSearchPathForDirectoriesInDomains(NSCachesDirectory, NSUserDomainMask, YES).lastObject stringByAppendingPathComponent:@"customer"]
 
 @implementation CLClearCacheTableViewCell
 
@@ -29,8 +29,6 @@
         __weak typeof(self) weakSelf = self;
         dispatch_async(dispatch_get_global_queue(0, 0), ^{
             
-#warning 睡眠
-            [NSThread sleepForTimeInterval:5.0];
             //获得缓存文件夹路径
             unsigned long long size = CustomCacheFile.fileSize;
             size += [SDImageCache sharedImageCache].getSize;
@@ -82,8 +80,6 @@
             NSFileManager *mgr = [NSFileManager defaultManager];
             [mgr removeItemAtPath:CustomCacheFile error:nil];
             [mgr createDirectoryAtPath:CustomCacheFile withIntermediateDirectories:YES attributes:nil error:nil];
-#warning 睡眠
-             [NSThread sleepForTimeInterval:2.0];
             
             // 所有的缓存都清除完毕
             dispatch_async(dispatch_get_main_queue(), ^{

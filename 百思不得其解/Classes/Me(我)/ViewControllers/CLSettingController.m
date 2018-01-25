@@ -26,8 +26,6 @@ static NSString *ID = @"CellIdentifier";
     self.tableView.delegate = self;
     [self.tableView registerClass:[CLClearCacheTableViewCell class] forCellReuseIdentifier:ID];
    // [self geCacheSize];
-    
-    
 }
 
 
@@ -41,7 +39,6 @@ static NSString *ID = @"CellIdentifier";
 - (UITableViewCell *) tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
     return [tableView dequeueReusableCellWithIdentifier:ID];
 }
-
 
 
 - (void) geCacheSize {
