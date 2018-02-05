@@ -8,11 +8,15 @@
 
 #import "CLEssenceViewController.h"
 #import "CLTitleButton.h"
+#import "CLAllViewController.h"
+#import "CLVideoViewController.h"
+#import "CLVoiceViewController.h"
+#import "CLPictureViewController.h"
+#import "CLWordViewController.h"
 
 @interface CLEssenceViewController ()
 @property (nonatomic, weak) CLTitleButton *selectedTitleButton;
 @property (nonatomic, weak) UIView *indicatorView;
-
 @end
 
 @implementation CLEssenceViewController
@@ -20,9 +24,30 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     [self setNavigationItem];
+    [self setupChildViewController];
     [self setupScrollView];
     [self setupTitleView];
 }
+
+
+- (void) setupChildViewController {
+    CLAllViewController *allViewController = [[CLAllViewController alloc] init];
+    [self addChildViewController:allViewController];
+    
+    CLVideoViewController *videoViewController = [[CLVideoViewController alloc] init];
+    [self addChildViewController:videoViewController];
+    
+    CLVoiceViewController *voiceViewController = [[CLVoiceViewController alloc] init];
+    [self addChildViewController:voiceViewController];
+    
+    CLPictureViewController *pictureViewController = [[CLPictureViewController alloc] init];
+    [self addChildViewController:pictureViewController];
+    
+    CLWordViewController *wordViewController = [[CLWordViewController alloc] init];
+    [self addChildViewController:wordViewController];
+}
+
+
 
 - (void) setupTitleView {
     UIView *titleView = [[UIView alloc] init];
@@ -62,8 +87,27 @@
 
 - (void) setupScrollView {
     UIScrollView *scrollView = [[UIScrollView alloc] initWithFrame:self.view.bounds];
+    scrollView.contentInsetAdjustmentBehavior = UIScrollViewContentInsetAdjustmentNever;
     scrollView.backgroundColor = CLRandomColor;
+    scrollView.frame = self.view.bounds;
+    scrollView.pagingEnabled = YES;
+    scrollView.showsVerticalScrollIndicator = NO;
+    scrollView.showsHorizontalScrollIndicator = NO;
     [self.view addSubview:scrollView];
+    
+    NSUInteger count = self.childViewControllers.count;
+    for (int i = 0; i < count; ++i) {
+        UITableView *childVCView = (UITableView *)self.childViewControllers[i].view;
+        childVCView.backgroundColor = CLRandomColor;
+        childVCView.CL_X =  i * childVCView.CL_wight;
+        childVCView.CL_Y = 0;
+        childVCView.CL_height = scrollView.CL_height;
+        [scrollView addSubview:childVCView];
+        //内边距
+        childVCView.contentInset =  UIEdgeInsetsMake(99, 0, 49, 0);
+        childVCView.scrollIndicatorInsets = childVCView.contentInset;
+    }
+    scrollView.contentSize = CGSizeMake(count * scrollView.CL_wight,0);
 }
 
 

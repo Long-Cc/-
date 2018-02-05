@@ -90,6 +90,11 @@
 		04CE4A2B1FCC407A00B3798E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 04CE4A2A1FCC407A00B3798E /* Assets.xcassets */; };
 		04CE4A311FCC407A00B3798E /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 04CE4A301FCC407A00B3798E /* main.m */; };
 		04D0B84A1FF680F80084EDFE /* CLTitleButton.m in Sources */ = {isa = PBXBuildFile; fileRef = 04D0B8491FF680F80084EDFE /* CLTitleButton.m */; };
+		04D294E82028A7870014ADDB /* CLAllViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 04D294E72028A7870014ADDB /* CLAllViewController.m */; };
+		04D294EB2028A7B40014ADDB /* CLVideoViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 04D294EA2028A7B40014ADDB /* CLVideoViewController.m */; };
+		04D294EE2028A7C80014ADDB /* CLVoiceViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 04D294ED2028A7C80014ADDB /* CLVoiceViewController.m */; };
+		04D294F12028A7DD0014ADDB /* CLPictureViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 04D294F02028A7DD0014ADDB /* CLPictureViewController.m */; };
+		04D294F42028A8190014ADDB /* CLWordViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 04D294F32028A8190014ADDB /* CLWordViewController.m */; };
 		04DAF25E1FD834A5001A8BD9 /* CLNavigationController.m in Sources */ = {isa = PBXBuildFile; fileRef = 04DAF25D1FD834A5001A8BD9 /* CLNavigationController.m */; };
 		04DAF2611FD83A28001A8BD9 /* CLSettingController.m in Sources */ = {isa = PBXBuildFile; fileRef = 04DAF2601FD83A28001A8BD9 /* CLSettingController.m */; };
 		04E9825D1FE41A220034C8EF /* UITextField+CLExtension.m in Sources */ = {isa = PBXBuildFile; fileRef = 04E9825C1FE41A220034C8EF /* UITextField+CLExtension.m */; };
@@ -265,6 +270,16 @@
 		04CE4A301FCC407A00B3798E /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		04D0B8481FF680F80084EDFE /* CLTitleButton.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CLTitleButton.h; sourceTree = "<group>"; };
 		04D0B8491FF680F80084EDFE /* CLTitleButton.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CLTitleButton.m; sourceTree = "<group>"; };
+		04D294E62028A7870014ADDB /* CLAllViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CLAllViewController.h; sourceTree = "<group>"; };
+		04D294E72028A7870014ADDB /* CLAllViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CLAllViewController.m; sourceTree = "<group>"; };
+		04D294E92028A7B40014ADDB /* CLVideoViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CLVideoViewController.h; sourceTree = "<group>"; };
+		04D294EA2028A7B40014ADDB /* CLVideoViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CLVideoViewController.m; sourceTree = "<group>"; };
+		04D294EC2028A7C80014ADDB /* CLVoiceViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CLVoiceViewController.h; sourceTree = "<group>"; };
+		04D294ED2028A7C80014ADDB /* CLVoiceViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CLVoiceViewController.m; sourceTree = "<group>"; };
+		04D294EF2028A7DD0014ADDB /* CLPictureViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CLPictureViewController.h; sourceTree = "<group>"; };
+		04D294F02028A7DD0014ADDB /* CLPictureViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CLPictureViewController.m; sourceTree = "<group>"; };
+		04D294F22028A8190014ADDB /* CLWordViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CLWordViewController.h; sourceTree = "<group>"; };
+		04D294F32028A8190014ADDB /* CLWordViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CLWordViewController.m; sourceTree = "<group>"; };
 		04DAF25C1FD834A5001A8BD9 /* CLNavigationController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CLNavigationController.h; sourceTree = "<group>"; };
 		04DAF25D1FD834A5001A8BD9 /* CLNavigationController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CLNavigationController.m; sourceTree = "<group>"; };
 		04DAF25F1FD83A28001A8BD9 /* CLSettingController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CLSettingController.h; sourceTree = "<group>"; };
@@ -533,6 +548,16 @@
 			children = (
 				0456BF6A1FD3AEF8001A1C69 /* CLEssenceViewController.h */,
 				0456BF6B1FD3AEF8001A1C69 /* CLEssenceViewController.m */,
+				04D294E62028A7870014ADDB /* CLAllViewController.h */,
+				04D294E72028A7870014ADDB /* CLAllViewController.m */,
+				04D294E92028A7B40014ADDB /* CLVideoViewController.h */,
+				04D294EA2028A7B40014ADDB /* CLVideoViewController.m */,
+				04D294EC2028A7C80014ADDB /* CLVoiceViewController.h */,
+				04D294ED2028A7C80014ADDB /* CLVoiceViewController.m */,
+				04D294EF2028A7DD0014ADDB /* CLPictureViewController.h */,
+				04D294F02028A7DD0014ADDB /* CLPictureViewController.m */,
+				04D294F22028A8190014ADDB /* CLWordViewController.h */,
+				04D294F32028A8190014ADDB /* CLWordViewController.m */,
 			);
 			path = ViewController;
 			sourceTree = "<group>";
@@ -797,14 +822,17 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				04D294EE2028A7C80014ADDB /* CLVoiceViewController.m in Sources */,
 				04CA78371FE809A1002456A9 /* NSObject+MJCoding.m in Sources */,
 				04CA78381FE809A1002456A9 /* NSObject+MJKeyValue.m in Sources */,
 				041CE47B1FE67EED00BB42D0 /* CLMeTableViewCell.m in Sources */,
 				044CE59C1FE7ECC200AAC8CF /* UIRefreshControl+AFNetworking.m in Sources */,
+				04D294E82028A7870014ADDB /* CLAllViewController.m in Sources */,
 				0456BF681FD3AE6F001A1C69 /* TabBarViewController.m in Sources */,
 				048998851FE160F100FA0A30 /* CLLoginRegisterTextField.m in Sources */,
 				044CE5971FE7ECC200AAC8CF /* AFNetworkActivityIndicatorManager.m in Sources */,
 				044CE55B1FE7EC1B00AAC8CF /* SDWebImageDownloader.m in Sources */,
+				04D294EB2028A7B40014ADDB /* CLVideoViewController.m in Sources */,
 				04CA78181FE8084B002456A9 /* CLSquare.m in Sources */,
 				044CE5981FE7ECC200AAC8CF /* UIActivityIndicatorView+AFNetworking.m in Sources */,
 				04E9825D1FE41A220034C8EF /* UITextField+CLExtension.m in Sources */,
@@ -851,7 +879,9 @@
 				044CE57A1FE7ECB500AAC8CF /* AFHTTPSessionManager.m in Sources */,
 				044CE5641FE7EC1B00AAC8CF /* UIImage+ForceDecode.m in Sources */,
 				044CE56B1FE7EC1B00AAC8CF /* UIView+WebCacheOperation.m in Sources */,
+				04D294F42028A8190014ADDB /* CLWordViewController.m in Sources */,
 				0456BF7A1FD3AF7B001A1C69 /* CLFollowViewController.m in Sources */,
+				04D294F12028A7DD0014ADDB /* CLPictureViewController.m in Sources */,
 				04D0B84A1FF680F80084EDFE /* CLTitleButton.m in Sources */,
 				048173141FF12E7D00E89B54 /* CLClearCacheTableViewCell.m in Sources */,
 				04ABA3BD1FDEBDBF00CA9D9B /* CLLoginRegisterViewController.m in Sources */,
