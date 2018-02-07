@@ -30,6 +30,7 @@
 #define CLColor(r, g, b) CLColorA((r), (g), (b), 255)
 #define CLRandomColor CLColor(arc4random_uniform(255), arc4random_uniform(255), arc4random_uniform(255))
 #define CLGrayColor(v) CLColor((v),(v),(v))
+#define CLCommandBgColor CLGrayColor(206)
 
 #endif
 #endif /* PrefixHeader_pch */
